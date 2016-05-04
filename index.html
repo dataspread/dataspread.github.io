@@ -1,0 +1,338 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+  <title>Zenvisage</title>
+
+  <!-- Bootstrap core CSS -->
+
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/offcanvas.css" rel="stylesheet">
+  <link href="css/ap.css" rel="stylesheet">
+  <style> 
+  .carousel{
+	    background: #2f4350;
+	    width: 85%;
+	    margin-left: auto;
+   	    margin-right: auto;	
+   }	
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      height: 400px;	
+      margin: auto;
+
+  }
+  </style>
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+
+<body>
+
+  <script type="text/javascript" src="http://data-people.cs.illinois.edu/papers.json"></script>    
+
+  <script type="text/javascript" src="display_papers.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+  <script src="js/bootstrap.js"></script>
+
+  
+
+   <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html#">zenvisage</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html#">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#usecases">Use Cases</a></li>
+              <li><a href="index.html#papers">Papers</a></li>
+              <li><a href="index.html#contact">Contact Us</a><li>
+            </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row row-offcanvas row-offcanvas-right">
+
+      <!--<div class="col-12 col-sm-9"> -->
+          <br> <br>
+          <div class="row">
+            <div class="col-md-4"> 
+               <img src="images/zenvisage.png" class="img-responsive img" style="margin-bottom: 10pt;">  
+           </div> 
+            <div class="col-md-8"> 
+              <h2>
+                <font color="red">Zenvisage is a system for effortless visual exploration of large datasets.</font>
+              </h2>
+              <br> <br>
+            </div>
+          </div>
+      <!--</div>-->
+      </div>
+	<div class="row">
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>	
+	    </ol>
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	      <div class="item active">
+		      <img class="img-responsive" src="images/zen-dragndrop.png">
+	      </div>
+
+	      <div class="item">
+		      <img class="img-rounded" src="images/zen-zql.png">
+	      </div>
+		
+	      <div class="item">
+		      <img class="img-rounded" src="images/zen-scatter.png">
+	      </div>
+
+	   
+	    </div>
+
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	</div>
+
+      <a name="about"></a> 
+      <div class="row">
+        <div class="col-md-12">
+          <h2> <font color="blue"> Why Zenvisage? </font></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h5> In the "big data" era, everyone has access to massive quantities of data, and are struggling to
+          make sense of, and derive value from such data. The state of the art for non-programmers 
+          is to load this data into a 
+          visualization tool, and repeatedly generate visualizations until desired ones are identified.
+          This exploration is <i> painful, tedious, and time-consuming</i>, meaning that the <i>"insight per unit
+          time"</i> is exceedingly low.
+          </h5>
+
+
+          <h5>
+            What if you could <i> "skip ahead to the insights"</i>?
+          </h5>
+
+          <h5> 
+            <b>Zenvisage</b> is a visual exploration system that can automatically 
+            identify and recommend interesting
+            visualizations. The user can specify at a high level what they are looking for, and the system will
+            do the rest.
+          </h5>
+      <a name="about"></a> 
+      <div class="row">
+        <div class="col-md-12">
+          <h2> <font color="blue"> Key Features </font> </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h5>
+        	<b> Zenvisage </b> enables users to effortlessly receive visualization recommendations for interesting trends, patterns, and insights from large datasets. Here are the key features of Zenvisage:
+          </h5>
+          <h5>
+	         <ul>  
+		        <li> <b> Interactive Insight Sketch Interface. </b>
+            Zenvisage users can directly draw the trend-line, bar chart, or scatterplot they are looking for, and then rely on the system to find appropriate matches: for instance, a person browsing a dataset of material properties may be looking for those materials displaying a specific correlation between two properties. Users can also drag-and-drop trends onto the canvas and then subsequently modify the trend. 
+            Using this interface, users can specify the insights they are looking for, and expect Zenvisage to find matches, much like a "visualization search engine".
+            <li> <b> Sophisticated Visual Query Interface. </b>
+            For more complex requests, Zenvisage supports a query language, called ZQL (pronounced "zee-quel"), short for Zenvisage Query Language, a flexible and intuitive mechanism to specify desired insights from visualizations. Using a small number of ZQL lines, users can explore trends, patterns, and insights in any which way they desire.  
+            <!--The design of ZQL is inspired from Query by Example (QBE) Language, and  builds on work on visualization specification for visual analytics, in          particular from Polaris, and Grammar of Graphics.-->
+
+               
+            <li> <b> Visualization Recommendations. </b> In addition to returning results for user-submitted queries, zenvisage runs a host of parallel queries to find the most interesting trends for that subset of data the user is currently viewing and presents them as visualization recommendations.
+            </li>
+ 
+	         </ul>
+           Zenvisage generalizes and extends our prior system <b>SeeDB</b> (see papers).
+         </h5>
+        </div>
+      </div>
+   	
+ 
+
+      <a name="usecases"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2> <font color="blue">Current Partners</font></h2>
+          <h5> Zenvisage is being developed with close collaboration with a number of partners who have large datasets and a pressing need for automated data exploration. Here is a small sample:
+          <ul>
+	          <li> <b> Engineering Data Analysis. </b> We are developing SEED (short for System for Electrolyte Exploration and Discovery), a version of Zenvisage tailored for electrolyte property exploration, with battery scientists at Carnegie Mellon University. </li>
+            <li> <b> Genomic Data Analysis. </b> We are developing Genvisage, a version of Zenvisage tailored to genomic data analysis, with bioinformatics researchers at the NIH KnowEnG center, established at Illinois and Mayo Clinic.</li>
+            <li> <b>Environmental Data Analysis. </b> We are working with environmental scientists to develop a version of Zenvisage tailored to tracking and detecting patterns in environmental sensor data. 
+            <li> <b> Advertising Data Analysis. </b> We are developing a version of Zenvisage tailored to advertising data analysis, with engineers at Turn, Inc. </li>
+            <li> <b> Educational Data Analysis. </b> We are tailoring Zenvisage to work on educational data to help administrators at Illinois understand student trends, comparisons, and patterns. </li>
+	    <!--<li> Engineering Data Analysis</li>
+	    <li> Server Monitoring Analysis</li>	
+	     <li> Mobile App Analysis</li>		-->
+            </ul>
+          </h5>
+        </div>
+      </div>
+
+
+
+      
+<!--
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <h2>Visual Analytics</h2>
+          <p>Automatically recommending visualizations or visual summaries on very large volumes of data</p>
+          <p><a class="btn btn-default" href="visual.html" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-12 col-sm-4">
+          <h2>Interactive Analytics</h2>
+          <p>Interactive querying of large datasets, keeping track of versions, while possibly sacrificing
+            slightly on accuracy of query results </p>
+            <p><a class="btn btn-default" href="query.html" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-12 col-sm-4">
+            <h2>Crowd-Powered Analytics </h2>
+            <p>Using crowdsourcing to process and make sense of large volumes of data </p>
+            <p><a class="btn btn-default" href="scoop.html" role="button">View details &raquo;</a></p>
+          </div>
+      </div>
+  -->
+      <!--
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <h2>Information Extraction</h2>
+          <p>Extracting information from the web, integrating it with existing information, and surfacing this information to users </p>
+          <p><a class="btn btn-default" href="web.html" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-12 col-sm-4">
+          <h2>Recommendation Systems</h2>
+          <p>Building scalable recommendation systems that take into account
+            contextual information</p>
+            <p><a class="btn btn-default" href="recom.html" role="button">View details &raquo;</a></p>
+          </div>
+      </div>
+      -->
+      <a name="papers"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2> <font color="blue"> Papers </font> </h2>
+
+        </div>
+      </div>
+
+      <a name="selected"></a> 
+      <div class="row">
+        <div class="col-md-12">
+          <script type="text/javascript">
+          display_papers(["zenvisage", "vizrec", "seedb", "seedb-demo", "smart-drill-down",  "smart-drill-down-demo", "seedb-paper", "intel-sample","needletail"], true, 10);
+          </script>
+        </div>
+      </div>
+
+      <a name="contact"></a>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2><font color="blue"> Contact Us </font></h2>
+          <h5> Zenvisage is being developed by a team of undergraduate and graduate students headed by Prof. <a href="http://data-people.cs.illinois.edu">Aditya Parameswaran</a>, along with a number of collaborators, including
+          Prof. Karrie Karahalios and Prof. Samuel Madden. The list of contributors includes (in alphabetical order): 
+          Himel Dev, Lijin Guo, Silu Huang, Albert Kim, John Lee, Gary Luo, Stephen Macke, Sajjadur Rahman, Tarique Siddiqui, Tana Wattanawaroon, Manasi Vartak, Dajun Xu, Edward Xue, and Xiaofo Yu.
+        </h5>
+
+        <h5>
+          Please reach out to the lead PhD student, <a href="http://web.engr.illinois.edu/~tsiddiq2/">Tarique Siddiqui</a>
+          (tsiddiq2@illinois.edu) if you'd like to either contribute, or be
+          a beta tester of Zenvisage! </h5>
+        </div>
+      </div>
+
+
+
+
+
+      <hr> 
+
+        
+
+      <div class="row">
+        <div class="col-md-4" align="left">
+          <p>&nbsp; &nbsp; &copy; Aditya Parameswaran 2016</p>
+        </div>
+        <div class="col-md-8" align="right">
+          <p> With thanks to our seed funding sources: <!-- <img src="http://www.cccblog.org/wp-content/uploads/2014/01/bd2k_logo.png" style="height:30px;" border="5"> 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/0/03/20070812181510%21NSF_Logo.jpg/120px-NSF_Logo.jpg" style="height:50px;" border="5"> -->
+          <img src="http://research.google.com/images/faculty_award.png" style="height:50px;" border="5">  <img src="http://peer.berkeley.edu/news/wp-content/uploads/2015/08/SiebelEnergyInstitute_Logowhite.jpg" style="height:50px;" border="5"></p>
+
+        </div>
+      </div>
+
+
+      
+      </div><!--/row-->
+
+
+
+
+    
+
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+  </body>
+  </html>
+
+
