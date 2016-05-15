@@ -143,15 +143,23 @@
 	  </div>
 	</div>
 
+<br/>
+<br/>
+
       <a name="about"></a> 
       <div class="row">
         <div class="col-md-12">
-          <h2> <font color="blue"> Why DataSpread? </font></h2>
+          <h2> <font color="blue"> Data Analytics for the 99% </font></h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h5> Blah blah
+          <h5> 
+            Spreadsheets have found ubiquitous use by scientists, business and financial analysts, researchers, and lay users. However, spreadsheets cannot express complex operations (e.g., joins), cannot handle large datasets, do not support collaboration, and foster errors, redundancy, and stale data. On the other hand, relational databases are well-known to be powerful and scalable, but are not flexible, intuitive, and interactive. 
+          </h5>
+
+          <h5>
+            DataSpread addresses these limitations by <b>holistically unifying spread-sheets with databases</b>: preserving spreadsheets as the front-end, and databases as the back-end. 
           </h5>
 
 
@@ -164,48 +172,59 @@
       <div class="row">
         <div class="col-md-12">
           <h5>
-        	<b> Zenvisage </b> enables users to effortlessly receive visualization recommendations for interesting trends, patterns, and insights from large datasets. Here are the key features of Zenvisage:
+        	<b> DataSpread </b> supports the holistic integration
+          of spreadsheets and database systems with the following novel features:
           </h5>
           <h5>
 	         <ul>  
-		        <li> <b> Interactive Insight Sketch Interface. </b>
-            Zenvisage users can directly draw the trend-line, bar chart, or scatterplot they are looking for, and then rely on the system to find appropriate matches: for instance, a person browsing a dataset of material properties may be looking for those materials displaying a specific correlation between two properties. Users can also drag-and-drop trends onto the canvas and then subsequently modify the trend. 
-            Using this interface, users can specify the insights they are looking for, and expect Zenvisage to find matches, much like a "visualization search engine".
-            <li> <b> Sophisticated Visual Query Interface. </b>
-            For more complex requests, Zenvisage supports a query language, called ZQL (pronounced "zee-quel"), short for Zenvisage Query Language, a flexible and intuitive mechanism to specify desired insights from visualizations. Using a small number of ZQL lines, users can explore trends, patterns, and insights in any which way they desire.  
-            <!--The design of ZQL is inspired from Query by Example (QBE) Language, and  builds on work on visualization specification for visual analytics, in          particular from Polaris, and Grammar of Graphics.-->
-
-               
-            <li> <b> Visualization Recommendations. </b> In addition to returning results for user-submitted queries, zenvisage runs a host of parallel queries to find the most interesting trends for that subset of data the user is currently viewing and presents them as visualization recommendations.
+		        <li> <b> Flexible Storage Model. </b> 
+              Due to the variety of structures that can be found in spreadsheets, DataSpread uses
+              a flexible storage model that can adapt to any existing spreadsheet structure.
             </li>
- 
+            <li> <b> Positional Awareness. </b>
+              Unlike relational databases, since spreadsheets are ordered, 
+              DataSpread uses positional indexes to locate
+              and order data very efficiently.
+            </li>
+            <li> <b> Shared Computation. </b>
+              Instead of computing formulae individually, DataSpread uses shared computation
+              to batch formulae computation, achieving order-of-magnitude speedups.
+            </li>
+            <li> <b> Lazy Computation. </b>
+              DataSpread prioritizes computation for what the user is currently seeing, as opposed
+              to what they are not.
+            </li>
 	         </ul>
-           Zenvisage generalizes and extends our prior system <b>SeeDB</b> (see papers).
-         </h5>
+          </h5>
+          <h5>
+            Due to these features, <b> DataSpread can scale to  billions of cells, providing interactive response times</b>. 
+          </h5>
         </div>
       </div>
    	
  
 
+
       <a name="usecases"></a>
       <div class="row">
         <div class="col-md-12">
-          <h2> <font color="blue">Current Partners</font></h2>
-          <h5> Zenvisage is being developed with close collaboration with a number of partners who have large datasets and a pressing need for automated data exploration. Here is a small sample:
-          <ul>
-	          <li> <b> Engineering Data Analysis. </b> We are developing SEED (short for System for Electrolyte Exploration and Discovery), a version of Zenvisage tailored for electrolyte property exploration, with battery scientists at Carnegie Mellon University. </li>
-            <li> <b> Genomic Data Analysis. </b> We are developing Genvisage, a version of Zenvisage tailored to genomic data analysis, with bioinformatics researchers at the NIH KnowEnG center, established at Illinois and Mayo Clinic.</li>
-            <li> <b>Environmental Data Analysis. </b> We are working with environmental scientists to develop a version of Zenvisage tailored to tracking and detecting patterns in environmental sensor data. 
-            <li> <b> Advertising Data Analysis. </b> We are developing a version of Zenvisage tailored to advertising data analysis, with engineers at Turn, Inc. </li>
-            <li> <b> Educational Data Analysis. </b> We are tailoring Zenvisage to work on educational data to help administrators at Illinois understand student trends, comparisons, and patterns. </li>
-	    <!--<li> Engineering Data Analysis</li>
-	    <li> Server Monitoring Analysis</li>	
-	     <li> Mobile App Analysis</li>		-->
-            </ul>
+          <h2> <font color="blue">Releases</font></h2>
+          <h5> Our version 0.1 release is forthcoming. Stay tuned!
           </h5>
-        </div>
+	       </div>
       </div>
 
+
+      <a name="partners"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2> <font color="blue">Development Partners</font></h2>
+          <h5> The development of DataSpread is being done in collaboration with the 
+            analytics team at Yahoo! Champaign, along with beta-testers from the NIH-BD2K Center
+            at the University of Illinois and Mayo Clinic.
+          </h5>
+         </div>
+      </div>
 
 
       
@@ -266,15 +285,15 @@
       <div class="row">
         <div class="col-md-12">
           <h2><font color="blue"> Contact Us </font></h2>
-          <h5> Zenvisage is being developed by a team of undergraduate and graduate students headed by Prof. <a href="http://data-people.cs.illinois.edu">Aditya Parameswaran</a>, along with a number of collaborators, including
-          Prof. Karrie Karahalios and Prof. Samuel Madden. The list of contributors includes (in alphabetical order): 
-          Himel Dev, Lijin Guo, Silu Huang, Albert Kim, John Lee, Gary Luo, Stephen Macke, Sajjadur Rahman, Tarique Siddiqui, Tana Wattanawaroon, Manasi Vartak, Dajun Xu, Edward Xue, and Xiaofo Yu.
+          <h5> DataSpread is being developed by a team of undergraduate and graduate
+            students headed by Prof. <a href="http://www.forwarddatalab.org/kevinchang">Kevin Chang</a>
+            and Prof. <a href="http://data-people.cs.illinois.edu">Aditya Parameswaran</a>, along with  collaborators, including Prof. Karrie Karahalios. The list of contributors includes (in alphabetical order): 
+          Mangesh Bendre, Neelan Coleman, Himel Dev, Bofan Sun, Vipul Venkataraman, Yiming Wang, Yining Wang, Ding Zhang, Xinyan Zhou. 
         </h5>
 
         <h5>
-          Please reach out to the lead PhD student, <a href="http://web.engr.illinois.edu/~tsiddiq2/">Tarique Siddiqui</a>
-          (tsiddiq2@illinois.edu) if you'd like to either contribute, or be
-          a beta tester of Zenvisage! </h5>
+          Please reach out to the lead PhD student, Mangesh Bendre (bendre1@illinois.edu) if you'd like to either contribute, or be
+          a beta tester of DataSpread! </h5>
         </div>
       </div>
 
@@ -288,12 +307,14 @@
 
       <div class="row">
         <div class="col-md-4" align="left">
-          <p>&nbsp; &nbsp; &copy; Aditya Parameswaran 2016</p>
+          <!--<p>&nbsp; &nbsp; &copy; Aditya Parameswaran 2016</p>-->
         </div>
         <div class="col-md-8" align="right">
-          <p> With thanks to our seed funding sources: <!-- <img src="http://www.cccblog.org/wp-content/uploads/2014/01/bd2k_logo.png" style="height:30px;" border="5"> 
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/0/03/20070812181510%21NSF_Logo.jpg/120px-NSF_Logo.jpg" style="height:50px;" border="5"> -->
-          <img src="http://research.google.com/images/faculty_award.png" style="height:50px;" border="5">  <img src="http://peer.berkeley.edu/news/wp-content/uploads/2015/08/SiebelEnergyInstitute_Logowhite.jpg" style="height:50px;" border="5"></p>
+          <p> With thanks to our funding sources:  <img src="http://www.cccblog.org/wp-content/uploads/2014/01/bd2k_logo.png" style="height:30px;" border="5"> 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/0/03/20070812181510%21NSF_Logo.jpg/120px-NSF_Logo.jpg" style="height:50px;" border="5">
+          <!--
+          <img src="http://research.google.com/images/faculty_award.png" style="height:50px;" border="5">  <img src="http://peer.berkeley.edu/news/wp-content/uploads/2015/08/SiebelEnergyInstitute_Logowhite.jpg" style="height:50px;" border="5"> -->
+          </p>
 
         </div>
       </div>
